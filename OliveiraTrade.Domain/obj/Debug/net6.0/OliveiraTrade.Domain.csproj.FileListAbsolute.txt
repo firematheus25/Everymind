@@ -1,0 +1,12 @@
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\bin\Debug\net6.0\OliveiraTrade.Domain.deps.json
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\bin\Debug\net6.0\OliveiraTrade.Domain.dll
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\bin\Debug\net6.0\OliveiraTrade.Domain.pdb
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\OliveiraTrade.Domain.csproj.AssemblyReference.cache
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\OliveiraTrade.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\OliveiraTrade.Domain.AssemblyInfoInputs.cache
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\OliveiraTrade.Domain.AssemblyInfo.cs
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\OliveiraTrade.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\OliveiraTrade.Domain.dll
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\refint\OliveiraTrade.Domain.dll
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\OliveiraTrade.Domain.pdb
+C:\Dev\OliveiraTrade\OliveiraTrade.Domain\obj\Debug\net6.0\ref\OliveiraTrade.Domain.dll

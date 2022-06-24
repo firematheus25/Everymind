@@ -1,0 +1,55 @@
+﻿<Window x:Class="OliveiraTrade.WPF.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Login" Height="500" Width="350" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        FontFamily="Calibri">
+
+    <Grid Background="#FF82D1DF">
+        <Rectangle Height="280" VerticalAlignment="Top" Fill="#FF0098DA"/>
+        <Rectangle Height="40" VerticalAlignment="Top" Fill="#FF0098DA" />
+
+        <!--Retangulo Login-->
+        <Rectangle x:Name="ConteinerPrincipal" Width="300" Height="240" VerticalAlignment="Bottom" Margin="0,80" RadiusY="10" RadiusX="10" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <!--Grid Retangulo-->
+        <Grid VerticalAlignment="Bottom" Margin="30,80" Height="240">
+            <Label x:Name="lblConectando" Content="Conectar-se" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18" Focusable="False"/>
+
+            <StackPanel VerticalAlignment="Center" Margin="15">
+                <TextBox x:Name="txtUsuario" Margin="0,10" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#33000000" FontSize="18"/>
+                <PasswordBox x:Name="txtSenha" Margin="0,10" materialDesign:HintAssist.Hint="Senha" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" BorderBrush="#33000000" FontSize="18"/>
+            </StackPanel>
+        </Grid>
+
+        <Button x:Name="btnRegistrar" Height="40" Focusable="False" VerticalAlignment="Bottom" Foreground="#FFF" Background="{x:Null}" BorderBrush="{x:Null}" Click="BtnRegistrar_Click">
+            <Grid Width="200">
+                <materialDesign:PackIcon Kind="Register"/>
+                <TextBlock Text="Registrar-se" HorizontalAlignment="Center"/>
+            </Grid>
+        </Button>
+        <materialDesign:PackIcon x:Name="Icon" Kind="User" Width="100" Height="100" Margin="10 40 10 10" Foreground="#FFF" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button x:Name="BtnLogar" Width="150" Focusable="False" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" BorderThickness="5" Content="Conectar" Click="BtnLogar_Click"/>
+
+        <!--Botão Fechar-->
+        <Button x:Name="btnFechar" Focusable="False" VerticalAlignment="Top" HorizontalAlignment="Right" Width="30" Height="30" Margin="5" Style="{StaticResource MaterialDesignFloatingActionLightButton}" Background="{x:Null}" Foreground="#FFF" Click="BtnFechar_Click" ToolTip="Fechar">
+            <materialDesign:PackIcon Kind="Shutdown"/>
+        </Button>
+
+        <Button x:Name="btnMinimizar" VerticalAlignment="Top" HorizontalAlignment="Left" Width="30" Height="30" Margin="275 5 5 5" Background="{x:Null}" Foreground="#FFF"
+                Style="{StaticResource MaterialDesignFloatingActionLightButton}" Click="BtnMinimizar_Click" materialDesign:ButtonProgressAssist.IndicatorBackground="Azure" ToolTip="Minimizar">
+            <materialDesign:PackIcon Kind="WindowMinimize"/>
+        </Button>
+    </Grid>
+
+</Window>

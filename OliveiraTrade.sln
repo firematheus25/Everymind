@@ -1,19 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliveiraTrade.API", "OliveiraTrade.API\OliveiraTrade.API.csproj", "{8BFB8127-A634-4C45-A299-70B45E1503E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OliveiraTrade.API", "OliveiraTrade.API\OliveiraTrade.API.csproj", "{8BFB8127-A634-4C45-A299-70B45E1503E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliveiraTrade.Domain", "OliveiraTrade.Domain\OliveiraTrade.Domain.csproj", "{3B94E829-2D4B-42C3-8052-DD535C0DA1BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OliveiraTrade.Domain", "OliveiraTrade.Domain\OliveiraTrade.Domain.csproj", "{3B94E829-2D4B-42C3-8052-DD535C0DA1BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliveiraTrade.WPF", "OliveiraTrade.WPF\OliveiraTrade.WPF.csproj", "{16D5318B-4D21-4093-856D-DCD0B6271740}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8BFB8127-A634-4C45-A299-70B45E1503E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +23,15 @@ Global
 		{3B94E829-2D4B-42C3-8052-DD535C0DA1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B94E829-2D4B-42C3-8052-DD535C0DA1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B94E829-2D4B-42C3-8052-DD535C0DA1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D5318B-4D21-4093-856D-DCD0B6271740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D5318B-4D21-4093-856D-DCD0B6271740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D5318B-4D21-4093-856D-DCD0B6271740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D5318B-4D21-4093-856D-DCD0B6271740}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABB717A5-A7D8-4829-B704-4234AC697231}
 	EndGlobalSection
 EndGlobal
