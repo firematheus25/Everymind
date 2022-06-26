@@ -28,14 +28,28 @@ namespace OliveiraTrade.API.Repository
             }
         }
 
-        public async Task<GenericResult> Login(string email, string senha)
+        public async Task<GenericResult> PutAsync(Pessoa pessoa)
         {
             try
             {
-                var login = await _context.Pessoa.FirstOrDefaultAsync(x => x.Email == email && x.Senha == senha);
-                if (login != null)
+                _context.Pessoa.Update(pessoa);
+                await _context.SaveChangesAsync();
+                return new GenericResult(true, "Cadastro atualizado com sucesso.");
+            }
+            catch (Exception e)
+            {
+                return new GenericResult(false, "Erro ao atualizar conta.");
+            }
+        }
+
+        public async Task<GenericResult> Login(Login login)
+        {
+            try
+            {
+                var pessoa = await _context.Pessoa.FirstOrDefaultAsync(x => x.Email == login.Email && x.Senha == login.Senha);
+                if (pessoa != null)
                 {
-                    return new GenericResult(true, "Login Realizado com sucesso");
+                    return new GenericResult(true, "Login Realizado com sucesso", pessoa);
                 }
 
                 return new GenericResult(false, "Usuário ou senha inválido.");

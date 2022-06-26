@@ -1,0 +1,14 @@
+Bom dia,
+
+Necessário alterar os seguintes arquivos:
+
+Projeto WPF -> Services -> Client.cs -> public string BaseAddress { get; set; } = "https://localhost:7080";    *Alterar para o localhost da sua máquina.
+
+Projeto WebAPI -> appssetings.json - > 
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost,1433;Database=OliveiraTrade;User ID=sa;Password=1q2w3e4r@#$; TrustServerCertificate = True"     *Alterar para o seu banco.
+  },
+  
+ 
+Projeto WebAPI -> Context -> SQL.sql   *Rodar script para criação do banco

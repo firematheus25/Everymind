@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace OliveiraTrade.Domain.Entities
 {
+    [Table("Pessoas")]
     public class Pessoa
     {
-        [Key]
-        public int Id { get; set; }
 
         [Required(ErrorMessage = "Prencher o nome.")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "O Nome deve ter no mínimo {2} e no máximo {1} caracteres.")]
@@ -21,11 +21,12 @@ namespace OliveiraTrade.Domain.Entities
         public string CPF { get; set; }
 
         [Required(ErrorMessage = "Informe o Sexo.")]
-        public string Sexo { get; set; }
+        public int Sexo { get; set; }
 
         [Required(ErrorMessage = "Informe a Data de Nascimento.")]
         public DateTime Nascimento { get; set; }
 
+        [Key]
         [Required(ErrorMessage = "Prencher o Email.")]
         public string Email { get; set; }
 

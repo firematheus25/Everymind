@@ -1,0 +1,16 @@
+﻿CREATE DATABASE OliveiraTrade
+GO
+
+USE OliveiraTrade
+GO
+
+CREATE TABLE Pessoas(
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(11) NOT NULL,
+    sexo VARCHAR(1) NOT NULL,
+    nascimento DATETIME NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(30) NOT NULL
+
+    CONSTRAINT PK_PESSOAS PRIMARY KEY (email)
+)

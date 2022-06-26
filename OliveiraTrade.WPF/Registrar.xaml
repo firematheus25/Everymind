@@ -10,8 +10,7 @@
         ResizeMode="NoResize" 
         WindowStartupLocation="CenterScreen" 
         WindowStyle="None" 
-        FontFamily="Calibri" 
-        ShowInTaskbar="False">
+        FontFamily="Calibri">
 
     <Grid Background="#FF82D1DF">
         <Rectangle Height="280" VerticalAlignment="Top" Fill="#FF0098DA"/>
@@ -44,7 +43,7 @@
                 </Grid>
             </GroupBox>
 
-            <GroupBox x:Name="gpboxRegistrar" Width="330" Margin="10" BorderThickness="0.5" IsEnabled="False">
+            <GroupBox x:Name="gpboxRegistrar" Width="330" Margin="10" BorderThickness="0.5">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -58,18 +57,20 @@
                     </Grid.RowDefinitions>
 
                     <Label Grid.ColumnSpan="2" Content="Registrar" FontSize="18" Foreground="#888" HorizontalAlignment="Center" Margin="115.99,0" Width="80.02"/>
-                    <TextBox x:Name="txtNomeUsuario" Grid.Column="0" Grid.Row="1" Margin="10 20 10 0" materialDesign:HintAssist.Hint="Nome" Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#33000000" FontSize="18"/>
-                    <PasswordBox x:Name="txtSenhaUsuario" Grid.Column="1" Grid.Row="1" Margin="10 20 10 0" materialDesign:HintAssist.Hint="Senha" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" BorderBrush="#33000000" FontSize="18"/>
+                    <TextBox x:Name="txtNome" Grid.Column="0" Grid.Row="1" Margin="10 20 10 0" materialDesign:HintAssist.Hint="Nome" Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#33000000" FontSize="18"/>
+                    <ComboBox x:Name="cbbSexo" Grid.Column="1" Grid.Row="1" Margin="10 20 10 0" materialDesign:HintAssist.Hint="Sexo" Style="{StaticResource MaterialDesignFloatingHintComboBox}" BorderBrush="#33000000" FontSize="18"/>
 
-                    <TextBox x:Name="txtCpfUsuario" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="10,20,152,20" materialDesign:HintAssist.Hint="CPF" Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#33000000" FontSize="18" />
-                    <TextBox x:Name="txtNascimentoUsuario" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Margin="10,20,6,20" materialDesign:HintAssist.Hint="Nascimento" Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#33000000" FontSize="18" PreviewTextInput="TxtNascimentoUsuario_PreviewTextInput"/>
+                    <TextBox x:Name="txtCpf" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="10,15,152,20" materialDesign:HintAssist.Hint="CPF" Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#33000000" FontSize="18" />
+                    <DatePicker x:Name="txtNascimento" Grid.Column="1" Grid.Row="2" Margin="10,28,6,0" materialDesign:HintAssist.Hint="Nascimento" FontSize="18" VerticalAlignment="Top" Height="32" Grid.RowSpan="2"/>
+
+
                     <Border Grid.ColumnSpan="3" Margin="0 20 0 0" Height="0.5" Background="#33000000"/>
                 </Grid>
             </GroupBox>
         </StackPanel>
         <Button x:Name="btnUsuario" Height="40" Focusable="False" VerticalAlignment="Bottom" Foreground="#FFF" Background="{x:Null}" BorderBrush="{x:Null}" Click="BtnUsuario_Click">
             <Grid Width="150">
-                <materialDesign:PackIcon Kind="UserAdd"/>
+                <materialDesign:PackIcon Kind="UserAdd" Margin="38,0,0,0" VerticalAlignment="Center"/>
                 <TextBlock Text="Logar" HorizontalAlignment="Center"/>
             </Grid>
         </Button>
@@ -78,13 +79,7 @@
         <materialDesign:PackIcon x:Name="Icon1" Width="150" Height="150" Kind="Register" Margin="10 30 0 0" Foreground="#FFF" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
         <!--Botões-->
-        <Button x:Name="btnDesbloquear" Height="30" VerticalAlignment="Bottom" Width="150" Margin="-350 350 0 65" BorderThickness="5" Click="BtnDesbloquear_Click">
-            <Grid Width="120">
-                <materialDesign:PackIcon Kind="Checkbook"/>
-                <TextBlock Text="Confirmar" HorizontalAlignment="Center"/>
-            </Grid>
-        </Button>
-        <Button x:Name="btnRegistrar" Width="150" VerticalAlignment="Bottom" Margin="350 65 0 65" BorderThickness="5" IsEnabled="False" Click="BtnRegistrar_Click">
+        <Button x:Name="btnRegistrar" Width="150" VerticalAlignment="Top" Margin="325,420,325,0" BorderThickness="5" Click="BtnRegistrar_Click">
             <Grid Width="130">
                 <materialDesign:PackIcon Kind="Register"/>
                 <TextBlock Text="Registrar-se" HorizontalAlignment="Center"/>

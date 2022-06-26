@@ -23,3 +23,10 @@ C:\Dev\OliveiraTrade\OliveiraTrade.WPF\obj\Debug\net6.0-windows\OliveiraTrade.WP
 C:\Dev\OliveiraTrade\OliveiraTrade.WPF\obj\Debug\net6.0-windows\ref\OliveiraTrade.WPF.dll
 C:\Dev\OliveiraTrade\OliveiraTrade.WPF\obj\Debug\net6.0-windows\Login.baml
 C:\Dev\OliveiraTrade\OliveiraTrade.WPF\obj\Debug\net6.0-windows\Login.g.cs
+C:\Dev\OliveiraTrade\OliveiraTrade.WPF\obj\Debug\net6.0-windows\Registrar.baml
+C:\Dev\OliveiraTrade\OliveiraTrade.WPF\obj\Debug\net6.0-windows\Registrar.g.cs
+C:\Dev\OliveiraTrade\OliveiraTrade.WPF\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Dev\OliveiraTrade\OliveiraTrade.WPF\bin\Debug\net6.0-windows\OliveiraTrade.Domain.dll
+C:\Dev\OliveiraTrade\OliveiraTrade.WPF\bin\Debug\net6.0-windows\OliveiraTrade.Domain.pdb
+C:\Dev\OliveiraTrade\OliveiraTrade.WPF\obj\Debug\net6.0-windows\EditarCadastro.baml
+C:\Dev\OliveiraTrade\OliveiraTrade.WPF\obj\Debug\net6.0-windows\EditarCadastro.g.cs

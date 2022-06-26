@@ -16,12 +16,17 @@ namespace OliveiraTrade.API.Controllers
             _pessoaRepository = pessoaRepository;
         }
 
-        [HttpGet("v1/Pessoa/login/email/{email}/senha/{senha}")]
-        public async Task<GenericResult> Login([FromRoute] string email, [FromRoute] string senha)
-            => await _pessoaRepository.Login(email, senha);
+        [HttpPost("v1/login")]
+        public async Task<GenericResult> Login([FromBody] Login login)
+            => await _pessoaRepository.Login(login);
 
         [HttpPost("v1/pessoa")]
         public async Task<GenericResult> Post([FromBody] Pessoa pessoa)
             => await _pessoaRepository.PostAsync(pessoa);
+
+        [HttpPut("v1/pessoa")]
+        public async Task<GenericResult> Put([FromBody] Pessoa pessoa)
+            => await _pessoaRepository.PutAsync(pessoa);
     }
+
 }

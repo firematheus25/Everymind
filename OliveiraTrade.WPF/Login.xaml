@@ -27,14 +27,14 @@
             <Label x:Name="lblConectando" Content="Conectar-se" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18" Focusable="False"/>
 
             <StackPanel VerticalAlignment="Center" Margin="15">
-                <TextBox x:Name="txtUsuario" Margin="0,10" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#33000000" FontSize="18"/>
+                <TextBox x:Name="txtEmail" Margin="0,10" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#33000000" FontSize="18"/>
                 <PasswordBox x:Name="txtSenha" Margin="0,10" materialDesign:HintAssist.Hint="Senha" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" BorderBrush="#33000000" FontSize="18"/>
             </StackPanel>
         </Grid>
 
         <Button x:Name="btnRegistrar" Height="40" Focusable="False" VerticalAlignment="Bottom" Foreground="#FFF" Background="{x:Null}" BorderBrush="{x:Null}" Click="BtnRegistrar_Click">
             <Grid Width="200">
-                <materialDesign:PackIcon Kind="Register"/>
+                <materialDesign:PackIcon Kind="Register" RenderTransformOrigin="3.644,0.47" Margin="41,0,0,0" VerticalAlignment="Center"/>
                 <TextBlock Text="Registrar-se" HorizontalAlignment="Center"/>
             </Grid>
         </Button>

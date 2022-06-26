@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using MaterialDesignThemes.Wpf;
+using OliveiraTrade.Domain.Entities;
+using OliveiraTrade.WPF.Services;
 
 namespace OliveiraTrade.WPF
 {
@@ -27,7 +18,25 @@ namespace OliveiraTrade.WPF
 
         private void BtnLogar_Click(object sender, RoutedEventArgs e)
         {
+            BuildLogin();
+        }
 
+        private async void BuildLogin()
+        {
+            var login = new Domain.Entities.Login();
+            login.Email = txtEmail.Text;
+            login.Senha = txtSenha.Password;
+
+            var genericResult = await new HttpRequestMethods<Domain.Entities.Login>().LoginAsync(login);
+            if (genericResult.Success)
+            {
+                var editaCadastro = new EditarCadastro((Pessoa)genericResult.Data);
+                editaCadastro.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show(genericResult.Message);
+            }
         }
 
         private void BtnFechar_Click(object sender, RoutedEventArgs e)
@@ -42,7 +51,8 @@ namespace OliveiraTrade.WPF
 
         private void BtnRegistrar_Click(object sender, RoutedEventArgs e)
         {
-             MessageBox.Show("Teste");
+            var registrarWindow = new Registrar();
+            registrarWindow.ShowDialog();
         }
     }
 }
